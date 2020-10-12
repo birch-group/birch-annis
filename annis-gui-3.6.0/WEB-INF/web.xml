@@ -53,7 +53,7 @@
 
   <servlet-mapping>
     <servlet-name>VaadinUI</servlet-name>
-    <url-pattern>/VAADIN/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
