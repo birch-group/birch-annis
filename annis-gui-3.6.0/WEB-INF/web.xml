@@ -18,13 +18,13 @@
     <param-name>productionMode</param-name>
     <param-value>true</param-value>
   </context-param>
-  
+
   <context-param>
     <description>Kickstarter Environment mode</description>
     <param-name>kickstarterEnvironment</param-name>
     <param-value>false</param-value>
   </context-param>
-  
+
   <servlet>
     <servlet-name>VaadinUI</servlet-name>
     <servlet-class>annis.gui.servlets.AnnisServlet</servlet-class>
@@ -36,12 +36,12 @@
       <description>
         Application widgetset
       </description>
-      <param-name>widgetset</param-name>        	
+      <param-name>widgetset</param-name>
       <param-value>annis.gui.widgets.gwt.AnnisWidgetSet</param-value>
     </init-param>
     <async-supported>true</async-supported>
   </servlet>
- 
+
   <servlet>
     <servlet-name>CitationRedirectionServlet</servlet-name>
     <servlet-class>annis.gui.servlets.CitationRedirectionServlet</servlet-class>
@@ -53,9 +53,9 @@
 
   <servlet-mapping>
     <servlet-name>VaadinUI</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/VAADIN/*</url-pattern>
   </servlet-mapping>
-  
+
   <servlet-mapping>
     <servlet-name>CitationRedirectionServlet</servlet-name>
     <url-pattern>/Cite/*</url-pattern>
