@@ -64,7 +64,7 @@ stop() {
 			echo "AnnisService not running."
 			;;
 		2)
-			rm $pid_file
+			rm -f $pid_file
 			echo "Removed stale PID file."
 	esac
 }
