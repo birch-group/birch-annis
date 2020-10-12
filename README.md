@@ -6,6 +6,7 @@ Pre-installed VM dependencies:
   - Postgres 11 (https://www.postgresql.org/download/linux/redhat/)
     - Configs found in /var/lib/pgsql/data
     - PG_CONFIG = /var/lib/pgsql/11/data/postgresql.conf
+    - Maven `sudo yum install maven`
 
 Required environment variables:
 These must be set in the VM prior to starting ANNIS with the `export` command.

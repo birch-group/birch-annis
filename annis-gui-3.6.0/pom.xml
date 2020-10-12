@@ -42,7 +42,7 @@
     </resources>
 
     <plugins>
-   
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
@@ -60,7 +60,7 @@
           </webResources>
         </configuration>
       </plugin>
-      
+
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
         <version>2.6</version>
@@ -73,7 +73,7 @@
             </goals>
             <configuration>
               <outputDirectory>${project.build.directory}/${project.build.finalName}/</outputDirectory>
-              <resources>          
+              <resources>
                 <resource>
                   <directory>../</directory>
                   <includes>
@@ -88,13 +88,13 @@
                   <targetPath>THIRD-PARTY</targetPath>
                   <excludes />
                 </resource>
-              </resources>              
-            </configuration>            
+              </resources>
+            </configuration>
           </execution>
         </executions>
       </plugin>
-   
-      <!-- A simple Jetty test server at http://localhost:8080/annis-gui can 
+
+      <!-- A simple Jetty test server at http://localhost:8080/annis-gui can
       be launched with the Maven goal jetty:run and stopped with jetty:stop -->
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
@@ -116,7 +116,7 @@
           </dependency>
         </dependencies>
       </plugin>
-      
+
       <plugin>
         <groupId>com.vaadin</groupId>
         <artifactId>vaadin-maven-plugin</artifactId>
@@ -136,7 +136,7 @@
           <style>OBF</style>
         </configuration>
       </plugin>
-      
+
     </plugins>
     <pluginManagement>
     	<plugins>
@@ -176,7 +176,7 @@
   </build>
 
   <dependencies>
-    
+
     <dependency>
       <groupId>de.hu-berlin.german.korpling.annis</groupId>
       <artifactId>annis-libgui</artifactId>
@@ -196,7 +196,7 @@
       <artifactId>jsclipboard</artifactId>
       <version>1.0.12</version>
     </dependency>
-    
+
     <dependency>
       <groupId>de.hu-berlin.german.korpling.annis</groupId>
       <artifactId>annis-docs</artifactId>
@@ -210,28 +210,28 @@
       <version>${project.version}</version>
       <type>jar</type>
     </dependency>
-    
+
     <dependency>
       <groupId>net.sf.opencsv</groupId>
       <artifactId>opencsv</artifactId>
       <version>2.3</version>
       <type>jar</type>
     </dependency>
-    
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>${servlet.version}</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
@@ -244,14 +244,14 @@
       <version>2.49.0</version>
       <scope>test</scope>
     </dependency>
-    
+
      <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache-core</artifactId>
       <version>2.6.11</version>
     </dependency>
-    
- 
+
+
   </dependencies>
   <name>annis-gui</name>
 </project>
