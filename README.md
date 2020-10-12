@@ -37,9 +37,8 @@ Helpful commands:
 `chown --reference=otherfile thisfile
 chmod --reference=otherfile thisfile
 `
-
 - tomcat logs (in case it differs from journalctl for some reason):
-tail -100 /usr/share/tomcat/logs/catalina.2020-10-09.log
+  `tail -100 /usr/share/tomcat/logs/catalina.2020-10-09.log`
 
 
 Java virtual machine used: /usr/lib/jvm/jre/bin/java
