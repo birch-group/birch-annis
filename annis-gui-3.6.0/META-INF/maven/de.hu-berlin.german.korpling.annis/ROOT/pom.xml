@@ -26,7 +26,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
-    <maven.tomcat.url>http://localhost:8081</maven.tomcat.url>
   </properties>
 
   <build>
