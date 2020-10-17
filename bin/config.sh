@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 source ./bin/secrets.sh
 
+. ~/.bash_profile
 # finding tomcat directory (regardless of version)
 # TOMCAT_DIR=$(ls -d apache-tomcat*)
 

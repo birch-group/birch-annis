@@ -48,7 +48,6 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>2.5</version>
         <configuration>
-          <path>/</path>
           <webResources>
             <webResource>
               <directory>${basedir}/src/main/webapp/WEB-INF</directory>
@@ -60,6 +59,18 @@
             </webResource>
           </webResources>
         </configuration>
+      </plugin>
+
+
+      <plugin>
+         <groupId>org.apache.tomcat.maven</groupId>
+         <artifactId>tomcat7-maven-plugin</artifactId>
+         <version>2.2</version>
+
+          <configuration>
+            <path>/</path>
+          </configuration>
+
       </plugin>
 
       <plugin>
