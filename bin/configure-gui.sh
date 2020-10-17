@@ -20,9 +20,9 @@ sudo cp -r ./${ANNIS_GUI_DIR} ${TOMCAT_DIR}/webapps
 sudo mv ${TOMCAT_DIR}/webapps/${ANNIS_GUI_DIR} ${TOMCAT_DIR}/webapps/ROOT
 
 # Make directories needed for maven
-mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src && \
-mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main && \
-mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp &&
+sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src
+sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main
+sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp
 
 # Copy over WEB-INF
 cp -avr ${TOMCAT_DIR}/webapps/ROOT/WEB-INF/ ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
