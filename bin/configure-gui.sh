@@ -20,12 +20,12 @@ sudo cp -r ./${ANNIS_GUI_DIR} ${TOMCAT_DIR}/webapps
 sudo mv ${TOMCAT_DIR}/webapps/${ANNIS_GUI_DIR} ${TOMCAT_DIR}/webapps/ROOT
 
 # Make directories needed for maven
-sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src
-sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main
-sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp
+sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src
+sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main
+sudo mkdir ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp
 
 # Copy over WEB-INF
-cp -avr ${TOMCAT_DIR}/webapps/ROOT/WEB-INF/ ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp/
+cp -avr ${TOMCAT_DIR}/webapps/ROOT/WEB-INF/ ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
 
 # Copt over VAADIN
-cp -avr ${TOMCAT_DIR}/webapps/ROOT/VAADIN/ ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp/
+cp -avr ${TOMCAT_DIR}/webapps/ROOT/VAADIN/ ${TOMCAT_DIR}/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
