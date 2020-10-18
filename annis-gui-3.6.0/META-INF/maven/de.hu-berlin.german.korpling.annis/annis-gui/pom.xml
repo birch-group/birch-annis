@@ -9,7 +9,7 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>annis-gui</artifactId>
+  <artifactId>ROOT</artifactId>
   <packaging>war</packaging>
 
   <organization>
@@ -29,7 +29,7 @@
   </properties>
 
   <build>
-    <finalName>annis-gui</finalName>
+    <finalName>ROOT</finalName>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
