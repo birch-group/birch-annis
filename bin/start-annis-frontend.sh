@@ -15,6 +15,6 @@ fi
 
 
 
-cd ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui && \
+cd ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT && \
 sudo mvn package && /
 sudo nohup mvn tomcat:run-war &
