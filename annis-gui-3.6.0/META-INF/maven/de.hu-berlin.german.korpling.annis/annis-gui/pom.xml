@@ -68,7 +68,7 @@
          <version>2.2</version>
           <configuration>
             <path>/</path>
-            <context>ROOT<context>
+            <context>ROOT</context>
           </configuration>
 
       </plugin>
