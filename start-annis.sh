@@ -41,18 +41,18 @@ else
 
   # Convert annis-gui to .war and move to tomcat/webapps IF
   # no existing annis_gui directory exists in the tomcat/webapps directory
-  if  [[ -z $(cd ${TOMCAT_DIR}/webapps && ls | grep 'ROOT') ]]; then
-    echo -e "${GREEN}No ROOT file detected in ${TOMCAT_DIR}/webapps. Copying annis-gui...${RESET}"
-    ./bin/configure-gui.sh & process_id=$!
-    wait $process_id
-    if [ $? -eq "1" ]
-    then
-      exit 1
-    fi
+  # if  [[ -z $(cd webapps && ls | grep 'ROOT') ]]; then
+  #   echo -e "${GREEN}No ROOT file detected in ${TOMCAT_DIR}/webapps. Copying annis-gui...${RESET}"
+  #   ./bin/configure-gui.sh & process_id=$!
+  #   wait $process_id
+  #   if [ $? -eq "1" ]
+  #   then
+  #     exit 1
+  #   fi
 
   # there's been change in the latest git pull
   elif [[ -n $(git diff --name-only ${ANNIS_GUI_DIR}) ]]; then
-    echo -e "${GREEN}Change detected in annis-gui with last git pull. Copying annis-gui...${RESET}"
+    echo -e "${GREEN}Change detected in annis-gui with last git pull. Re-packaging annis-gui...${RESET}"
     ./bin/configure-gui.sh & process_id=$!
     wait $process_id
     if [ $? -eq "1" ]
