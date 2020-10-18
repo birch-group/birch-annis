@@ -9,7 +9,7 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>ROOT</artifactId>
+  <artifactId></artifactId>
   <packaging>war</packaging>
 
   <organization>
