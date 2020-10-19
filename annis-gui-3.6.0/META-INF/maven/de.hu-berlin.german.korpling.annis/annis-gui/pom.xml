@@ -103,6 +103,8 @@
            <url>http://localhost:8080</url>
            <server>TomcatServer</server>
            <path>/</path>
+           <username>{TOMCAT_USERNAME}</username>
+           <password>{TOMCAT_PASSWORD}</password>
          </configuration>
        </plugin>
 

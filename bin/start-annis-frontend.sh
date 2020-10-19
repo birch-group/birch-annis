@@ -13,6 +13,9 @@ if [[ -n $(lsof -i :8080 | egrep 'java') ]]; then
   sudo kill -9 ${java_pid}
 fi
 
+# Set ${TOMCAT_PASSWORD} and ${TOMCAT_USERNAME} with actual values in pom.xml
+sudo sed -i "s/{TOMCAT_PASSWORD}/${TOMCAT_PASSWORD}/g" ${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/pom.xml
+sudo sed -i "s/{TOMCAT_USERNAME}/${TOMCAT_USERNAME}/g" ${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/pom.xml
 
 
 cd ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui && \
