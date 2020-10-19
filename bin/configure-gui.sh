@@ -26,4 +26,4 @@ mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis
 cp ./${ANNIS_GUI_DIR}/META-INF/context.xml ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/META-INF/
 
 # Copy over META-INF/MANIFEST.MF
-cp ./${ANNIS_GUI_DIR}/META-INF/context.xml/MANIFEST.MF ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/META-INF/
+cp ./${ANNIS_GUI_DIR}/META-INF/MANIFEST.MF ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/META-INF/
