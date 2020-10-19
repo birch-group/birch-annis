@@ -16,8 +16,6 @@ source ./bin/config.sh
 # # Move to tomcat/webapps directory on VM
 # sudo cp -r ./${ANNIS_GUI_DIR} ${TOMCAT_DIR}/webapps
 #
-# Rename to ROOT
-sudo mv ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui
 
 # Make directories needed for maven
 sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src
