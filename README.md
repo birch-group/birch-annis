@@ -76,3 +76,7 @@ cp -avr /usr/share/tomcat/webapps/ROOT/VAADIN/ /usr/share/tomcat/webapps/ROOT/ME
 
 
 /etc/nginx/conf.d/annis.conf
+
+
+
+annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/

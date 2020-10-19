@@ -17,18 +17,18 @@ source ./bin/config.sh
 # sudo cp -r ./${ANNIS_GUI_DIR} ${TOMCAT_DIR}/webapps
 #
 # Rename to ROOT
-sudo mv ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT
+sudo mv ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui
 
 # Make directories needed for maven
-sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src
-sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main
-sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp
+sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src
+sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src/main
+sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src/main/webapp
 
 # Copy over WEB-INF
-cp -avr  ./${ANNIS_GUI_DIR}/WEB-INF/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp/
+cp -avr  ./${ANNIS_GUI_DIR}/WEB-INF/  annis-gui-3.6.0/META-INF/maven/annis-gui/src/main/webapp/
 
 # Copy over VAADIN
-cp -avr  ./${ANNIS_GUI_DIR}/VAADIN/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp/
+cp -avr  ./${ANNIS_GUI_DIR}/VAADIN/  annis-gui-3.6.0/META-INF/maven/annis-gui/src/main/webapp/
 
 # Copy over THIRD-PARTY
-cp -avr  ./${ANNIS_GUI_DIR}/THIRD-PARTY/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/ROOT/src/main/webapp/
+cp -avr  ./${ANNIS_GUI_DIR}/THIRD-PARTY/  annis-gui-3.6.0/META-INF/maven/annis-gui/src/main/webapp/
