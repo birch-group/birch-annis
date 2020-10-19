@@ -47,36 +47,9 @@ Is this Java 8?
 should be /usr/lib/jvm/jre-1.8.0/bin/java
 - Changing `/etc/tomcat/tomcat.conf` to list `/usr/lib/jvm/jre-1.8.0/bin/java` as `JAVA_HOME`
 - `systemctl daemon-reload` to respect new changes
-Maven directory: /usr/share/tomcat/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui
-Tomcat maven: /usr/share/tomcat/webapps/ROOT/src/main/webapp
 
 Initiate maven: `maven package`
 Added tomcat path to settings.xml
 Added admin login to settings.xml
 mvn tomcat:run-war
-sudo -u root -g tomcat -- mvn package
-
-
-/usr/share/tomcat/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui
-
-
-
-
-cp -avr /home/birch-annis/annis-gui-3.6.0/ /usr/share/tomcat/webapps/
-mv /usr/share/tomcat/webapps/annis-gui-3.6.0 /usr/share/tomcat/webapps/ROOT
-
-mkdir annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src
-mkdir annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main
-mkdir annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp
-annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/target/annis-gui
-
-cp -avr /usr/share/tomcat/webapps/ROOT/WEB-INF/ /usr/share/tomcat/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
-
-cp -avr /usr/share/tomcat/webapps/ROOT/VAADIN/ /usr/share/tomcat/webapps/ROOT/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
-
-
-/etc/nginx/conf.d/annis.conf
-
-
-
-annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/
+For some reason, tomcat7:run-war needs context.xml form META-INF, but tomcat:run-war does not.
