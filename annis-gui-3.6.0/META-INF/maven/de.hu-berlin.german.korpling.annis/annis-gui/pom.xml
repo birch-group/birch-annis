@@ -102,6 +102,7 @@
          <configuration>
            <url>http://localhost:8080</url>
            <server>TomcatServer</server>
+           <useSeparateTomcatClassLoader>true</useSeparateTomcatClassLoader>
            <path>/</path>
            <username>{TOMCAT_USERNAME}</username>
            <password>{TOMCAT_PASSWORD}</password>
