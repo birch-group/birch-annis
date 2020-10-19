@@ -51,7 +51,7 @@ else
   #   fi
 
   # there's been change in the latest git pull
-  if [[ -n $(git diff --name-only ${ANNIS_GUI_DIR}) ]]; then
+  if [[ -n $(git diff --name-only HEAD~1 HEAD | grep '^$ANNIS_GUI_DIR') ]]; then
     echo -e "${GREEN}Change detected in annis-gui with last git pull. Re-packaging annis-gui...${RESET}"
     ./bin/configure-gui.sh & process_id=$!
     wait $process_id
