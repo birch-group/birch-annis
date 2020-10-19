@@ -30,3 +30,6 @@ cp -avr  ./${ANNIS_GUI_DIR}/VAADIN/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin
 
 # Copy over THIRD-PARTY
 cp -avr  ./${ANNIS_GUI_DIR}/THIRD-PARTY/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
+
+# Copy over META-INF
+cp -avr  ./${ANNIS_GUI_DIR}/META-INF/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
