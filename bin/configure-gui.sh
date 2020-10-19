@@ -18,15 +18,15 @@ source ./bin/config.sh
 #
 
 # Make directories needed for maven
-sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src
-sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src/main
-sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/annis-gui/src/main/webapp
+sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src
+sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main
+sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp
 
 # Copy over WEB-INF
-cp -avr  ./${ANNIS_GUI_DIR}/WEB-INF/  annis-gui-3.6.0/META-INF/maven/annis-gui/src/main/webapp/
+cp -avr  ./${ANNIS_GUI_DIR}/WEB-INF/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
 
 # Copy over VAADIN
-cp -avr  ./${ANNIS_GUI_DIR}/VAADIN/  annis-gui-3.6.0/META-INF/maven/annis-gui/src/main/webapp/
+cp -avr  ./${ANNIS_GUI_DIR}/VAADIN/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
 
 # Copy over THIRD-PARTY
-cp -avr  ./${ANNIS_GUI_DIR}/THIRD-PARTY/  annis-gui-3.6.0/META-INF/maven/annis-gui/src/main/webapp/
+cp -avr  ./${ANNIS_GUI_DIR}/THIRD-PARTY/  annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
