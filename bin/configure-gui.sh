@@ -7,6 +7,10 @@ sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/
 sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main
 sudo mkdir ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp
 
+# Remove any previous src/ or target/ directories
+sudo rm -r ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/target
+sudo rm -r ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src
+
 # Copy over WEB-INF
 cp -avr ./${ANNIS_GUI_DIR}/WEB-INF/ annis-gui-3.6.0/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/src/main/webapp/
 
