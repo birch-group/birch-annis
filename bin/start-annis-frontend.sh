@@ -20,4 +20,4 @@ sudo sed -i "s/{TOMCAT_USERNAME}/${TOMCAT_USERNAME}/g" ${ANNIS_GUI_DIR}/META-INF
 
 cd ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui && \
 sudo mvn package && /
-sudo nohup mvn tomcat7:run-war &
+sudo nohup mvn tomcat:run-war &
