@@ -28,11 +28,6 @@
     <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
   </properties>
 
-  <server>
-    <id>maven-tomcat-war-deployment-server></id>
-    <username>tomcat</username>
-  </server>
-
   <build>
     <finalName>annis-gui</finalName>
     <resources>
@@ -106,7 +101,7 @@
          <version>2.0</version>
          <configuration>
            <url>http://localhost:8080</url>
-           <path>/rps</path>
+           <path>/</path>
          </configuration>
        </plugin>
 
