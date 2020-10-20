@@ -1,0 +1,3 @@
+groups=group1
+password=$shiro1$SHA-256$1$yCQIzZiyVB1xDJu7mJ9yYg==$YLRPRdMZcj8yVS/dED6G/xG6PfjWIWjR0CzEu9RAqeE=
+permissions=admin:*
