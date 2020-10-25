@@ -13,7 +13,7 @@ ANNIS_GUI_DIR=$(ls -d annis-gui*)
 
 # values to replace in PG config
 # per reccomendations made at http://korpling.github.io/ANNIS/3.6/user-guide/advanced-postgresql.html
-shared_buffers="512MB"
+shared_buffers="700MB"
 work_mem="128MB"
 maintenance_work_mem="256MB"
 effective_cache_size="1536MB"
