@@ -29,7 +29,7 @@ if $NEWCONFIG
 
 else
   # Reset PG_CONFIG file if config.sh file was updated in latest git pull
-  if [[ -n $(git diff --name-only ./bin/config.sh) ]]; then
+  if [[ -n $(git diff --name-only HEAD~1 HEAD | grep "^bin/config.sh") ]]; then
     echo -e "${GREEN}Change detected in config file. Updating ${PG_CONFIG}...${RESET}"
     ./bin/db-config.sh & process_id=$!
     wait $process_id

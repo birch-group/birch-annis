@@ -2,8 +2,6 @@
 source ./bin/secrets.sh
 
 . ~/.bash_profile
-# finding tomcat directory (regardless of version)
-# TOMCAT_DIR=$(ls -d apache-tomcat*)
 
 # finding annis service directory (regardless of version)
 ANNIS_SERVICE_DIR=$(ls -d annis-service*)
