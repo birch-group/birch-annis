@@ -61,18 +61,6 @@
         </configuration>
       </plugin>
 
-
-      <plugin>
-         <groupId>org.apache.tomcat.maven</groupId>
-         <artifactId>tomcat7-maven-plugin</artifactId>
-         <version>2.2</version>
-
-          <configuration>
-            <path>/</path>
-          </configuration>
-
-      </plugin>
-
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
         <version>2.6</version>
@@ -106,6 +94,19 @@
         </executions>
       </plugin>
 
+      <!-- Configure the Tomcat Maven plugin -->
+       <plugin>
+         <groupId>org.apache.tomcat.maven</groupId>
+         <artifactId>tomcat7-maven-plugin</artifactId>
+         <version>2.0-beta-1</version>
+         <configuration>
+           <server>TomcatServer</server>
+           <path>/annis_gui</path>
+           <username>{TOMCAT_USERNAME}</username>
+           <password>{TOMCAT_PASSWORD}</password>
+         </configuration>
+       </plugin>
+
       <!-- A simple Jetty test server at http://localhost:8080/annis-gui can
       be launched with the Maven goal jetty:run and stopped with jetty:stop -->
       <plugin>
@@ -114,7 +115,7 @@
         <version>9.3.7.v20160115</version>
         <configuration>
           <webApp>
-            <contextPath>/</contextPath>
+            <contextPath>/annis-gui</contextPath>
             <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
               <resourcesAsCSV>target/annis-gui/,src/main/webapp/</resourcesAsCSV>
             </baseResource>
@@ -207,6 +208,14 @@
       <groupId>com.github.vaadin4qbanos</groupId>
       <artifactId>jsclipboard</artifactId>
       <version>1.0.12</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.0-beta-1</version>
+        <type>maven-plugin</type>
+        <scope>provided</scope>
     </dependency>
 
     <dependency>
