@@ -2,7 +2,7 @@
 source ./bin/config.sh
 
 # First stop annis
-sudo ./stop-annis.sh
+./stop-annis.sh
 
 # Get -n keyword arg
 while getopts ":n:" opt; do

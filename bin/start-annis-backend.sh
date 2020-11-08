@@ -12,7 +12,7 @@ export PATH=$PATH:$ANNIS_HOME/bin
 if [[ -n $(ps -ef | egrep '\-Dannis\.home\=annis\-service') ]]; then
   echo Previous ANNIS pid left lingering, killing it now...
   annis_pid=$(ps -ef | egrep '\-Dannis\.home\=annis\-service' | awk '{print $2}')
-  sudo kill -9 ${annis_pid}
+  kill -9 ${annis_pid}
 fi
 
 annis-service.sh start
