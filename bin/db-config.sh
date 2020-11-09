@@ -10,12 +10,7 @@ if [ -z "$PG_CONFIG" ]; then
 fi
 
 # replacing variables in pg config
-for x in "${allConfigs[@]}"
-do
-  echo "Setting" $x "to "${!x}"..."
-  sudo sed -i "s/\(^#\)\($x\)/\2/" $PG_CONFIG
-  sudo sed -i "s/\(^$x *= *\).*/\1${!x}/" $PG_CONFIG
-done
+sudo bash ./bin/sed-pg_config.sh
 
 sudo systemctl restart postgresql-11
 echo "Restarting Postgres..."

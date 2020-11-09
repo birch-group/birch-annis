@@ -1,0 +1,9 @@
+sudo mvn tomcat:shutdown
+
+sudo sed -i "s/\(^#\)\($x\)/\2/" $PG_CONFIG
+sudo sed -i "s/\(^$x *= *\).*/\1${!x}/" $PG_CONFIG
+sudo systemctl restart postgresql-11
+
+sudo mvn package
+sudo nohup mvn tomcat:run-war
+sudo mvn tomcat:shutdown

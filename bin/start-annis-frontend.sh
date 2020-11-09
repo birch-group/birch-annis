@@ -18,6 +18,4 @@ sed -i "s/{TOMCAT_PASSWORD}/${TOMCAT_PASSWORD}/g" ${ANNIS_GUI_DIR}/META-INF/mave
 sed -i "s/{TOMCAT_USERNAME}/${TOMCAT_USERNAME}/g" ${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui/pom.xml
 
 
-cd ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui && \
-sudo mvn package && /
-sudo nohup mvn tomcat:run-war &
+sudo systemctl start annis-frontend

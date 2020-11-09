@@ -7,5 +7,4 @@ export PATH=$PATH:$ANNIS_HOME/bin
 echo Stopping Annis...
 annis-service.sh stop
 echo Shutting down Tomcat....
-cd ./${ANNIS_GUI_DIR}/META-INF/maven/de.hu-berlin.german.korpling.annis/annis-gui && \
-sudo mvn tomcat:shutdown
+sudo systemctl stop annis-frontend
