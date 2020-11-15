@@ -10,7 +10,7 @@ if [ -z "$PG_CONFIG" ]; then
 fi
 
 # replacing variables in pg config
-sudo bash ./bin/sed-pg_config.sh
+sudo /var/webhook/scripts/sed-pg_config.sh
 
 sudo systemctl restart postgresql-11
 echo "Restarting Postgres..."
