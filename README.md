@@ -2,7 +2,6 @@ Pre-installed VM dependencies:
   - git (`sudo yum install git`)
   - Java OpenJDK 8 (`sudo yum install java-1.8.0-openjdk`)
   - Tomcat 8 (`sudo yum install tomcat`) https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7
-    - Start server: `sudo systemctl start tomcat`
   - Postgres 11 (https://www.postgresql.org/download/linux/redhat/)
     - Configs found in /var/lib/pgsql/data
     - PG_CONFIG = /var/lib/pgsql/11/data/postgresql.conf
